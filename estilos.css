@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2? font-family = Cookie & display = swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:'arial', sans-serif;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: auto;
+	padding: 60px 0;
+}
+
+.logo{
+	 margin-left: -850px;
+	 margin-bottom: -300px;
+}
+
+/*imagen de encabezado*/
+
+header{
+	text-align: center;
+	height: 100vh;
+	background-image: linear-gradient(to top, rgba(161, 140, 209, .0)50%, rgba(251, 194, 235, .0)100%), url(img/fondooscuro.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+/*contenedor de texto en la imagen*/
+
+.contenedor-head{
+	padding: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ffffff;
+	font-family: arial black;
+
+
+}
+
+.contenedor-head h1{
+	margin-left: 450px;
+}
+
+.copy{
+	font-style: oblique;
+	font-family: 'Cookie', cursiva;
+	font-size: 72px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	color: #ffbf00;
+}
+
+.contenedor-head > p{
+	font-size: 72px;
+	
+}
+
+.iglesia001{
+	margin-left: -200px;
+	font-size: 10px;
+	color: #ffbf00;
+	font-family: garnet script;
+}
+
+/*Boton de Menu*/
+
+.hamburguesa{
+	z-index: 10;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	background: #000000;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/*Menu lateral*/
+
+.menu-navegacion{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	background-image: url(img/bannerigle3.png);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	transition: transform .3s ease-in-out;
+	transform: translate(100%);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+	transform: translate(0);
+}
+
+.menu-navegacion a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.titulo{
+	font-size: 60px;
+	margin-top: 15px;
+}
+
+.copy{
+	font-weight: 300;
+	font-size: 25px;
+}
+
+/*aca termina el Header*/
+
+/*Comienza NUESTRO SERVICIO*/
+
+.subtitulo{
+	text-align: center;
+	font-weight: 300;
+	color: #ffbf00;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+
+.contenedor-servicio{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+.contenedor-servicio >img{
+	width: 40%;
+}
+
+.lista-de-servicios{
+	width: 45%;
+}
+
+
+
+.servicio1{
+	margin-bottom: 20px;
+}
+
+.n-servicios{
+	margin-bottom: 50px;
+	color: 9af8ad0;
+}
+
+.servicios h3{
+	margin-bottom: 10px;          
+	margin-top: 50px;
+}
+
+.servicios p{
+	margin-bottom: 50px;
+	font-family: 'Cookie', cursiva;
+	font-size: 25px;
+
+}
+
+.numero{
+	display: inline-block;
+	background-image: linear-gradient(to top, #000000 0%, #ffbf00 100%);
+	width: 30px;
+	height: 30px;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: 700;
+	line-height: 30px;/*centrado de numeros en ovalos*/
+	margin-right: 5px;/*separa los circulos del texto*/
+
+}
+
+.contenedor img{
+	margin-top: 0px;
+	margin-bottom: 70px;
+}
+
+/*GALERIA*/
+
+.galeria{
+	background-image: url(img/bannerigle3.png);
+	padding-top: 30px;
+}
+
+.contenedor-galeria{
+	display: flex;
+	justify-content: space-evenly;/*margen equitativo a los elementos*/
+	flex-wrap: wrap;
+
+}
+
+
+.img-galeria{
+	object-fit: cover;
+	width: 30%;
+	display: block;
+	margin-bottom: 15px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+	border-radius: 10px;
+}
+
+/*IGLESIA ONLINE*/
+
+.pueblo2{ /*contenedor de iconos y movilidad de toda la seccion*/
+	display: flex;/*para que se coloquen los elementos uno al lado del otro*/
+	justify-content: space-evenly;/*para que los elementos tengan espacio entre si equitativos*/
+	align-items: center;
+	flex-wrap: wrap;/*si uno de los elementos no cabe en la misma linea, los envia hacia abajo*/
+}
+
+.cont-pueblo{
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Cookie', cursiva;
+	margin: 10px auto;
+	width: 40%;
+	height: 50%;
+	background-color: #ffffff;
+	border: 1px solid #ffbf00;
+	border-radius: 30px;
+	box-shadow: 3px 3px black, -0em 0 0.0em goldenrod;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.cont-pueblo h3{
+	font-size: 25px;
+	margin-top: -10px;
+}
+
+.cont-pueblo > img{
+	line-height: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+	object-fit: cover;
+}
+
+
+
+.n-pueblo{
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:490px;
+  right:20px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+/*footer*/
+
+footer{
+	background-image: url(img/bannerigle3.png);
+	padding-bottom: 0.1px;
+}
+
+.contenedor-contacto{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin: 30px;
+}
+
+.contac-tos{
+	width: 40%;
+	color: #ffffff;
+
+}
+
+.brand{
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.brand+p{
+	font-weight: 500;
+}
+
+.sociales{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-icono{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	color: #ffbf00;
+
+}
+
+.social-icono:hover{
+	background: #ffbf00;
+	color: #ffffff;
+}
+
+.social-icono i{
+	font-size: 30px;
+	line-height: 60px;
+}
+
+.line{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 2px;
+	background: #ffffff;
+	margin-bottom: 60px;
+}
+
+/*adaptacion a dispositivos moviles*/
+
+@media screen and (max-width: 800px){/*primer punto de quiebre*/
+	/*adapte todo a 500px*/
+	.contenedor-head{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	
+
+
+	.menu-navegacion{
+		width: 50vw;
+	}
+
+	.titulo{
+		font-size: 40px;
+	}
+
+	.contenedor-servicio img{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	.lista-de-servicios{
+		width: 80%;
+
+	}
+
+	.servicio1{
+		margin-bottom: 30px;
+
+	}
+
+	.img-galeria{
+		width: 45%;
+	}
+
+	.cont-pueblo{
+		width: 80%;
+	}
+
+	.contenedor-contacto{
+		justify-content: center;
+		text-align: center;
+		width: 80%;
+		margin-bottom: 40px;
+		font-size: 20px;
+		
+	}
+
+	.contenedor-contacto p{
+		font-family: 'Cookie', cursiva;
+		font-size: 25px;
+		text-align: center;
+		margin-left: 25px;
+		margin-right: 0;
+	}
+
+	.contenedor-contacto h2{
+		text-align: center;
+		font-size: 20px;
+
+	}
+
+	.sociales{
+		width: 80%;
+		justify-content: space-evenly;
+		margin-left: 25px;
+		margin-right: 0;
+	}
+
+	.sociales i{
+		margin-left: 0;
+		margin-top: 0px;
+	}
+
+	.social-icono {
+		margin-top: 50px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
